@@ -1,0 +1,44 @@
+.spot-popup-root {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #f3f1f1;
+}
+
+.spot-popup-root h2 {
+    font-size: 16pt;
+    margin: 0;
+}
+
+.spot-popup-root .spot-description {
+    font-size: 14pt;
+    padding: .5rem 0;
+}
+
+.spot-popup-root .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.spot-popup-root .buttons>button {
+    cursor: pointer;
+}
+
+.spot-popup-root .heart {
+    color: var(--primary-pink)
+}
+
+.spot-popup-root .images {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.spot-popup-root .more-info {
+    transition: 0.3s;
+    padding: .5rem;
+}
+
+
+.spot-popup-root .more-info:hover {
+    background-color: #5b6b81;
+
+}

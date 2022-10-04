@@ -1,0 +1,15 @@
+.side-menu-root {
+    background-color: transparent;
+    position: relative;
+    transition: 300ms;
+    z-index: 9900;
+}
+
+.side-menu-root.hidden {
+    transform: translateX(-105%);
+}
+
+.side-menu-root.visible {
+    transform: translateX(0);
+
+}

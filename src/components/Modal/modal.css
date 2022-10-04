@@ -1,0 +1,60 @@
+.modal-root {
+    backdrop-filter: blur(3px);
+    position: relative;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    position: fixed;
+    z-index: 9999;
+}
+
+
+
+.modal-root .modal {
+    background-color: #79899e;
+    width: 80%;
+    min-width: 50%;
+    border-radius: 8px;
+    position: absolute;
+    border: solid 4px #29323e;
+    height: 50vh;
+    top: 6rem;
+}
+
+.modal-root h2 {
+    background-color: #29323e;
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+.modal-root p {
+    padding: 1rem;
+    font-size: 18pt;
+}
+
+.modal-root .buttons {
+    display: flex;
+
+}
+
+.modal-root .buttons>button {
+    padding: 1rem;
+}
+
+.modal-root .delete {
+    background-color: #d76e64;
+    color: #f3f1f1;
+
+
+}
+
+.modal-root .delete:hover {
+    background-color: #cb5045;
+    border: solid 2px #cb5045;
+}
+
+.modal-root .go-back:hover {
+    background-color: #616f95;
+}

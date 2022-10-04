@@ -1,0 +1,219 @@
+.new-spot-form-root {
+    background-color: #414f61;
+    font-family: 'Barlow Condensed', sans-serif;
+    position: absolute;
+    inset: 0;
+    cursor: default;
+    height: 100vh;
+}
+
+.new-spot-form-root .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #29323e;
+    border-bottom: solid 4px #546171;
+    font-size: 20pt;
+    text-align: center;
+    color: #f3f1f1;
+    padding: .25rem;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.new-spot-form-root h1 {
+    margin: 0;
+    font-size: inherit;
+    padding: 0 .25rem;
+}
+
+.new-spot-form-root .logo {
+    font-size: 12pt;
+    font-family: 'Oswald', sans-serif;
+}
+
+.new-spot-form-root .title-spot {
+    color: #DCA11D;
+}
+
+.new-spot-form-root .form-data {
+    padding: .25rem .5rem;
+    color: #f3f1f1;
+    font-size: 20pt;
+}
+
+.new-spot-form-root label,
+.new-spot-form-root legend {
+    font-size: 14pt;
+    font-weight: 500;
+    display: block;
+}
+
+
+.new-spot-form-root .location-root {
+    display: flex;
+}
+
+.new-spot-form-root .spot-type-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.new-spot-form-root .spot-type-container label {
+    padding: .5rem 1rem;
+    transition: 0.3s;
+    font-size: 14pt;
+
+}
+
+.new-spot-form-root input,
+.new-spot-form-root textarea {
+    border: none;
+    outline: none;
+    padding: .2rem;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin: .5rem 0;
+    border-radius: 2px;
+    background-color: #686D7D;
+    color: #f3f1f1;
+    border: solid 2px transparent;
+    font-size: 15pt;
+}
+
+.new-spot-form-root input[type=file] {
+    background-color: unset;
+}
+
+.new-spot-form-root input::file-selector-button {
+    border: solid 2px #29323e;
+    color: #cbced2;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12pt;
+    border-radius: 4px;
+    padding: .5rem 1rem;
+    outline: none;
+    cursor: pointer;
+    background-color: #414f61;
+    margin-right: 1rem;
+    transform: 0.3s;
+}
+
+.new-spot-form-root input::file-selector-button:hover {
+    background-color: #29323e;
+
+}
+
+.new-spot-form-root textarea {
+    resize: none;
+}
+
+.new-spot-form-root input::placeholder,
+.new-spot-form-root textarea::placeholder {
+    color: #a2a6ac;
+}
+
+
+.new-spot-form-root .spot-type-container label {
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.new-spot-form-root input:focus,
+.new-spot-form-root textarea:focus {
+    border: solid 2px #709aa4;
+}
+
+.new-spot-form-root .spot-type-container {
+    padding: 1rem;
+}
+
+.new-spot-form-root .spot-type-container input[type=radio] {
+    display: none;
+}
+
+.new-spot-form-root .spot-type-container .spot {
+    border: solid 2px #c36c83;
+    color: #c36c83;
+
+
+}
+
+.new-spot-form-root .spot-type-container .park {
+    border: solid 2px #DCA11D;
+    color: #DCA11D;
+
+}
+
+.new-spot-form-root .spot-type-container .shop {
+    border: solid 2px #19b493;
+    color: #19b493;
+
+}
+
+
+
+.new-spot-form-root .spot-type-container .spot input:checked~label {
+    background-color: #c36c83;
+    color: #f3f1f1;
+}
+
+.new-spot-form-root .spot-type-container .park input:checked~label {
+    background-color: #DCA11D;
+    color: #f3f1f1
+}
+
+.new-spot-form-root .spot-type-container .shop input:checked~label {
+    background-color: #19b493;
+    color: #f3f1f1;
+}
+
+.new-spot-form-root .lat-input,
+.new-spot-form-root .long-input {
+    padding: .5rem;
+}
+
+.new-spot-form-root .lat-input label,
+.new-spot-form-root .long-input label {
+    font-size: 14pt;
+}
+
+.new-spot-form-root .buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 1rem;
+    transition: .3s;
+
+
+}
+
+.new-spot-form-root .buttons>button {
+    padding: 1rem 2rem;
+}
+
+.new-spot-form-root .submit {
+    color: #3aaa94;
+    border: solid 2px #3aaa94;
+    transition: 0.3s;
+}
+
+.new-spot-form-root .cancel {
+    background-color: #414f61;
+    border: solid 2px #d76e64;
+    color: #d76e64;
+    transition: 0.3s;
+}
+
+.new-spot-form-root .cancel:hover {
+    background-color: #d76e64;
+    color: #f3f1f1;
+}
+
+.new-spot-form-root .submit:hover {
+    background-color: #3aaa94;
+    color: #f3f1f1;
+}

@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    height: var(--header-height);
+    position: fixed;
+    z-index: 9000;
+    background-color: #414f61;
+    box-shadow: 0 5px 10px 0 #595c5d84 inset;
+    width: 100%;
+}
+
+header .title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22pt;
+    color: #f3f1f1;
+    margin: .5rem;
+
+}
+
+header span {
+    color: #DCA11D;
+}
+
+
+
+header .login {
+    background-color: inherit;
+    border-left: solid 2px #7b7f89;
+    padding: 0 1rem;
+    border-radius: 0;
+    height: 100%;
+
+}
+
+header .active-user-parent {
+    display: flex;
+    gap: .5rem;
+    height: 100%;
+    border-left: solid 2px #7b7f89;
+    border-radius: 0;
+    padding: 0 1rem;
+}
+
+header .logout {
+    background-color: inherit;
+
+
+}
+
+header .active-user {
+    color: #f3f1f1;
+    font-size: 14pt;
+}

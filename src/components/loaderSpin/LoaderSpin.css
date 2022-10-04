@@ -1,0 +1,56 @@
+.loader-spin-root {
+    height: 100vh;
+    background-color: var(--primary-blue);
+    margin: 0 auto;
+    width: 100%;
+}
+
+.loader-spin-root .blank-space {
+    height: 45vh;
+}
+
+.loader-spin-root .map-loading {
+    text-align: center;
+    padding: 1rem;
+    color: #f3f1f1;
+    font-size: 14pt;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.loader-spin-root .circle {
+
+    margin: 0 auto;
+    background: transparent;
+    width: 2rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: solid rgba(241, 237, 237, 0.585) 5px;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    animation: spin 2s linear infinite;
+}
+
+.loader-spin-root .logo {
+    color: var(--primary-white);
+    font-family: 'Oswald', sans-serif;
+    font-size: 25pt;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.loader-spin-root .dot {
+    color: #1FD4AD;
+}
+
+.loader-spin-root .spot-logo {
+    color: #DCA11D;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,251 @@
+.spot-detail-page-root {
+    position: absolute;
+    inset: 0;
+    height: 100vh;
+
+    background-color: #414f61;
+    color: #f3f1f1;
+    font-size: 14pt;
+
+    cursor: default;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.spot-detail-page-root .logo {
+    font-size: 12pt;
+    margin: .5rem;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.spot-detail-page-root .title-spot {
+    color: #DCA11D;
+}
+
+.spot-detail-page-root .left {
+    display: flex;
+    gap: .25rem;
+}
+
+.spot-detail-page-root .spot-details {
+    padding: 0 1rem;
+
+}
+
+.spot-detail-page-root .name-type-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spot-detail-page-root h1 {
+    margin: .5rem 1rem;
+    text-align: center;
+    font-size: 25pt;
+
+    color: var(--primary-white);
+
+}
+
+.spot-detail-page-root .image-container {
+    display: block;
+    background-color: #546171;
+    border-radius: 4px;
+    margin: 1rem 3rem;
+    width: fit-content;
+}
+
+.spot-detail-page-root .image {
+    padding: .5rem;
+
+}
+
+.spot-detail-page-root h2 {
+    font-size: 25pt;
+    margin: 1rem 0;
+}
+
+.spot-detail-page-root h3 {
+    font-size: 20pt;
+    margin: 0;
+}
+
+.spot-detail-page-root h4 {
+    margin: 1rem 0;
+}
+
+.spot-detail-page-root .spot-location-parent {
+    padding: 1rem 0;
+}
+
+.spot-detail-page-root .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #29323e;
+    border-bottom: solid 4px #546171;
+    padding: 0rem;
+}
+
+.spot-detail-page-root .exit {
+    margin: 1rem 0;
+    font-size: 20pt;
+    color: #f3f1f1;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+}
+
+.spot-detail-page-root .exit:hover {
+    background-color: #546171;
+}
+
+.spot-detail-page-root .spot-coordinates {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: left;
+    gap: 2rem;
+}
+
+.spot-detail-page-root .spot-type {
+    width: fit-content;
+    margin: 1rem;
+
+
+}
+
+.spot-type .spot,
+.spot-type .park,
+.spot-type .shop {
+    font-size: 20pt;
+    padding: .5rem;
+    text-align: center;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.spot-type .spot {
+    color: #c36c83;
+
+}
+
+.spot-type .park {
+    color: #DCA11D;
+}
+
+.spot-type .shop {
+    color: #19b493;
+}
+
+
+
+.spot-detail-page-root .buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    padding: 1rem;
+
+}
+
+.spot-detail-page-root .buttons>button {
+    padding: 1rem 2rem;
+    transition: 0.3s;
+}
+
+.spot-detail-page-root .delete {
+    border: solid 2px #d76e64;
+    color: #d76e64;
+}
+
+.spot-detail-page-root .edit {
+    border: solid 2px #f3f1f1;
+}
+
+.spot-detail-page-root .delete:hover {
+    background-color: #c36c83;
+    color: #f3f1f1;
+}
+
+.spot-detail-page-root .edit:hover {
+    background-color: #f3f1f1;
+    color: #29323e;
+}
+
+.spot-location-edit {
+    color: #adb4c0b2;
+}
+
+.spot-detail-page-root input,
+.spot-detail-page-root textarea {
+    border: none;
+    outline: none;
+    padding: .2rem;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin: .5rem 0;
+    border-radius: 2px;
+    background-color: #686D7D;
+    color: #f3f1f1;
+    border: solid 2px transparent;
+    font-size: 15pt;
+}
+
+.spot-detail-page-root label {
+    display: block;
+    font-size: 16pt;
+}
+
+.spot-detail-page-root input[type=file] {
+    background-color: unset;
+}
+
+.spot-detail-page-root input::file-selector-button {
+    border: solid 2px #29323e;
+    color: #cbced2;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12pt;
+    border-radius: 4px;
+    padding: .5rem 1rem;
+    outline: none;
+    cursor: pointer;
+    background-color: #414f61;
+    margin-right: 1rem;
+    transform: 0.3s;
+}
+
+.spot-detail-page-root .buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 1rem;
+    transition: .3s;
+}
+
+.spot-detail-page-root .submit {
+    color: #3aaa94;
+    border: solid 2px #3aaa94;
+    transition: 0.3s;
+}
+
+.spot-detail-page-root .cancel {
+    background-color: #414f61;
+    border: solid 2px #d76e64;
+    color: #d76e64;
+    transition: 0.3s;
+}
+
+.editable {
+    padding: 1rem;
+}
+
+.spot-location-edit {
+    padding: 1rem 0;
+}
+
+.spot-detail-page-root input::placeholder,
+.spot-detail-page-root textarea::placeholder {
+    color: #a2a6ac;
+}
