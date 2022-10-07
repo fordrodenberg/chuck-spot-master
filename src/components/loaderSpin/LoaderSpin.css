@@ -1,8 +1,9 @@
 .loader-spin-root {
     height: 100vh;
-    background-color: var(--primary-blue);
+    background-color: #414f61;
     margin: 0 auto;
     width: 100%;
+
 }
 
 .loader-spin-root .blank-space {
@@ -37,9 +38,7 @@
     padding-top: 1rem;
 }
 
-.loader-spin-root .dot {
-    color: #1FD4AD;
-}
+
 
 .loader-spin-root .spot-logo {
     color: #DCA11D;
