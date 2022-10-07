@@ -191,6 +191,7 @@ export default function ({ handleExitClicked, name, description, location, type,
                         toggleIsModalOpen={toggleIsModalOpen}
                         id={id}
                         onSpotDeleted={onSpotDeleted}
+                        handleExitClicked={handleExitClicked}
                     />
                 )}
             </div>

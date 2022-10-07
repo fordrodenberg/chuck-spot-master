@@ -4,7 +4,7 @@ import { db } from "../../firebase-config";
 import './modal.css'
 
 
-export default function Modal({ isModalOpen, toggleIsModalOpen, id, onSpotDeleted }) {
+export default function Modal({ isModalOpen, toggleIsModalOpen, id, onSpotDeleted, handleExitClicked }) {
 
     const markerRef = doc(db, "markers", id)
 
@@ -15,12 +15,14 @@ export default function Modal({ isModalOpen, toggleIsModalOpen, id, onSpotDelete
     async function deleteSpotById() {
         deleteDoc(markerRef)
             .then(() => {
-                console.log('document deleted successfully')
+                onSpotDeleted && onSpotDeleted()
+                handleExitClicked && handleExitClicked()
             })
             .catch(error => {
                 console.log(error)
             })
-        toggleIsModalOpen && toggleIsModalOpen()
+
+
     }
 
     return (
@@ -47,7 +49,6 @@ export default function Modal({ isModalOpen, toggleIsModalOpen, id, onSpotDelete
                         className='delete'
                         onClick={() => {
                             deleteSpotById(id)
-                            onSpotDeleted && onSpotDeleted()
                         }}>
                         DELETE
                     </button>
